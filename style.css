@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gowun Dodum", sans-serif;
+}
+.container {
+  width: 60vw;
+  height: 1000vh;
+  margin: 0 auto;
+  background-color: #faf1e6;
+  overflow: hidden;
+  cursor: pointer;
+}
+body {
+  background-color: white;
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: xx-large;
+  color: #064420;
+}
+.heading {
+  padding-top: 2vw;
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.add-book {
+  width: 48vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+#add-but {
+  padding: 20px;
+  width: 30vw;
+  background-color: #064420;
+  font-size: larger;
+  color: white;
+}
+
+.new-book {
+  /* border: red 1px solid;*/
+  background-color: #e4efe7;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 15px;
+  width: 50vw;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+.new-book input {
+  padding: 10px;
+  line-height: 5px;
+}
+#submit-book {
+  background-color: #064420;
+  padding: 10px;
+  font-size: larger;
+  color: white;
+}
+#close-book {
+  background-color: #064420;
+  padding: 10px;
+  font-size: larger;
+  color: white;
+}
+.hidden {
+  display: none;
+}
+
+.visable {
+  display: block;
+}
+.book-holder {
+  /*border: 1px solid crimson;*/
+  width: 50vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.book-card-title {
+  /*border: hotpink 1px solid;*/
+  background-color: #e4efe7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  line-height: 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book-card {
+  border: blanchedalmond 1px solid;
+  background-color: #fdfaf6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  line-height: 50px;
+  font-size: 1.3em;
+  text-align: center;
+}
+#read {
+  border: 1px solid red;
+}
+
+li button {
+  width: 50px;
+  margin: 0 auto;
+}
+
+#book-read {
+  background-color: lightseagreen;
+}
+#delete {
+  background-color: crimson;
+}

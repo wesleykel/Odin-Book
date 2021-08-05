@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="container">
+      <div class="heading">
+        <h1>My Personal Library</h1>
+      </div>
+      <div class="add-book"><button id="add-but">Add Book</button></div>
+      <div id="hidden" class="hidden">
+        <div class="new-book">
+          <label for="author">Author</label>
+          <input id="author" type="text" placeholder="author" autofocus />
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="title" />
+          <label for="pages">Number of pages</label>
+          <input id="pages" type="number" placeholder="number of pages" />
+          <label for="read">Read</label>
+          <input id="read" type="checkbox" />
+          <button id="close-book">Close</button>
+          <button id="submit-book">Submit</button>
+        </div>
+      </div>
+      <ol id="book-holder" class="book-holder">
+        <li class="book-card-title">
+          <div>Title</div>
+          <div>Author</div>
+          <div>Pages</div>
+          <div>Read</div>
+          <div>Read/Unread</div>
+          <div>Delete</div>
+        </li>
+        <li class="book-card">
+          <div>The Bible</div>
+          <div>Testament</div>
+          <div>300</div>
+          <div>Read</div>
+          <button id="book-read" class="book-read">Read</button>
+          <button id="delete" class="delete">Delete</button>
+        </li>
+        <li class="book-card">
+          <div>The Bible</div>
+          <div>Testament</div>
+          <div>300</div>
+          <div>Read</div>
+          <button id="book-read" class="book-read">Read</button>
+          <button id="delete" class="delete">Delete</button>
+        </li>
+        <li class="book-card">
+          <div>The Bible</div>
+          <div>Testament</div>
+          <div>300</div>
+          <div>Read</div>
+          <button id="book-read" class="book-read">Read</button>
+          <button id="delete" class="delete">Delete</button>
+        </li>
+      </ol>
+    </div>
+    <script src="app2.js" async defer></script>
+  </body>
+</html>
