@@ -62,3 +62,39 @@ Dog.prototype = Object.create(Animal.prototype);
 
 const alfie = new Dog("Alfie", "Male");
 const fred = new Dog("Fred", "Female");
+
+
+for (let index = 0; index < myLibrary.length; index++) {
+    const element = myLibrary[index];
+    console.log(element);
+
+    let newListItem = document.createElement("li");
+newListItem.className = "book-card";
+exampleBookCard.insertAdjacentElement("afterend", newListItem);
+
+let newDivTitle = document.createElement("div");
+newListItem.insertAdjacentElement("beforeend", newDivTitle);
+newDivTitle.innerText = createdBook.title;
+
+let newDivAuthor = document.createElement("div");
+newListItem.insertAdjacentElement("beforeend", newDivAuthor);
+newDivAuthor.innerText = createdBook.author;
+
+let newDivPages = document.createElement("div");
+newListItem.insertAdjacentElement("beforeend", newDivPages);
+newDivPages.innerText = createdBook.pages;
+
+let newDivRead = document.createElement("div");
+newListItem.insertAdjacentElement("beforeend", newDivRead);
+
+let newReadButton = document.createElement("button");
+newReadButton.className = "book-read";
+newReadButton.id = "book-read";
+newReadButton.innerText = "Read";
+newListItem.insertAdjacentElement("beforeend", newReadButton);
+
+let newDeleteButton = document.createElement("button");
+newDeleteButton.className = "delete";
+newDeleteButton.id = "delete";
+newDeleteButton.innerText = "Delete";
+newListItem.insertAdjacentElement("beforeend", newDeleteButton);

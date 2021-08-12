@@ -43,7 +43,6 @@ h1 {
 }
 
 .new-book {
-  /* border: red 1px solid;*/
   background-color: #e4efe7;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -53,6 +52,8 @@ h1 {
   padding: 10px;
   text-align: center;
   font-size: 1.3em;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 5px;
 }
 .new-book input {
   padding: 10px;
@@ -78,32 +79,37 @@ h1 {
   display: block;
 }
 .book-holder {
-  /*border: 1px solid crimson;*/
   width: 50vw;
   margin: 0 auto;
   padding: 20px;
 }
 
 .book-card-title {
-  /*border: hotpink 1px solid;*/
+  border: #064420 1px solid;
   background-color: #e4efe7;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   line-height: 50px;
   font-size: 1.3em;
   font-weight: bold;
   text-align: center;
+  border-radius: 3px;
 }
 
 .book-card {
-  border: blanchedalmond 1px solid;
+  border: #064420 1px solid;
   background-color: #fdfaf6;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  line-height: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  min-height: 50px;
+  max-height: 100px;
   font-size: 1.3em;
   text-align: center;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 3px;
 }
+
 #read {
   border: 1px solid red;
 }
@@ -115,7 +121,129 @@ li button {
 
 #book-read {
   background-color: lightseagreen;
+  border-radius: 5px;
 }
 #delete {
   background-color: crimson;
+  border-radius: 5px;
+}
+
+/*IPHONE X*/
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #faf1e6;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .heading {
+    padding-top: 2vw;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: "Fredoka One", cursive;
+    font-size: xx-large;
+    color: #064420;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .add-book {
+    width: 80vw;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+  #add-but {
+    background-color: #064420;
+    font-size: 15px;
+    color: white;
+    height: 20px;
+    width: 80vw;
+    line-height: 10px;
+  }
+
+  .book-holder {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .book-card-title {
+    border: #064420 1px solid;
+    background-color: #e4efe7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    line-height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    width: 90vw;
+  }
+
+  .book-card {
+    border: #064420 1px solid;
+    background-color: #fdfaf6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    min-height: 50px;
+    max-height: 100px;
+    font-size: 0.9em;
+    text-align: center;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 3px;
+  }
+
+  #book-read {
+    background-color: lightseagreen;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  #delete {
+    background-color: crimson;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  .new-book {
+    background-color: #e4efe7;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 15px;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 5px;
+  }
+  .new-book input {
+    padding: 10px;
+    line-height: 5px;
+  }
+  #submit-book {
+    background-color: #064420;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+  }
+  #close-book {
+    background-color: #064420;
+    padding: 10px;
+    font-size: larger;
+    color: white;
+  }
 }
